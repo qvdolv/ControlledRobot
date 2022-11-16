@@ -1,4 +1,4 @@
-# ControlledRobot
+# Controlled Robot
 Robot controlled by cellphone
 
 ## Materials:
