@@ -1,12 +1,42 @@
 <link type="text/css" rel="stylesheet" href="stylesheets/main.css" />
 
 
-<h1>Welcome !!</h1>
-<p>Page under construction</p>
 
 
+<h1>Robot Controlled by Cellphone or any device connected to a network</h1>
+<div class="content">
 
-<video width="300" height="300" controls>
-  <source src="./vis/Test_robot_relieve_pedriatric_anxiety 2.mov" type="video/mp4">
-  Demo
-</video>
+    <div>
+        <h3>Motivation</h3>
+        <p>The project is inspired in the Adena Surgery Hospital method to relief anxiety in pediatric patients.</p>
+        <p>It offers remote control cars to pediatric patients for a ride as they head into the surgery room.</p>
+    </div>
+
+    <div>
+        <h3>Main idea</h3>
+        <p>Pediatric patients via a web page hosted in a local network can control a mobile robot, helping them to relieve their anxiety*.</p>
+
+    </div>
+
+
+    <div>
+        <h3>How it works</h3>
+
+        <p>
+        We connect the Arduino board via WiFi with the local network and create a server in the the former. The Arduino board will send to the local network possible commands for the robot, distance measure to an obstacle and receive the commands selected by the user in order to move the robot. All of these will be rendered in HTML format.
+        The algorithm in the Arduino sketch receives a string which represents a specific command and executes the function associated with the command. Moreover, when the measure of distance to an obstacle reaches a prefixed value, the avoidance collision algorithm is executed.
+        Regarding the interface, the front-end comprehend a web page that shows the possible commands as hyperlinks and displays the current distance measure to an obstacle.
+        </p>
+    </div>
+
+    <div class="content_video"">
+        <p><i>One classmate using the robot</i></p> 
+        <video width="300" height="300" controls>
+            <source src="./vis/Test_robot_relieve_pedriatric_anxiety 2.mov" type="video/mp4">
+            Demo
+        </video>
+
+    </div>
+
+
+</div>
